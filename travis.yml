@@ -1,0 +1,13 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: jon.gates@sas.com 
+  api: https://api.run.pivotal.io
+  organization: jogate-org
+  space: development
+  password:   secure: "o+un9xCM5NMVIy+GaoYQHcIkFCaWy7tLQjtlADpIrptu1YNDkUgXwuUfig0MMNGpxHM9CV11tUX1VZL2Kk3/jPWWQjNHcAUJJ9K50P+H5EvdYq8o24k8TSH0wKvQNqFmesWDh9YBB0kuvuaII/oSN
+/5YOafKohaG+QSmYe953uWOZMhhunw/PsO1ANQ7tljupYwMPxC3BalqnY8YzzaBIm5t14dxqlGXl/hhU4OJzpM8DMz1jTRV/WxnaTOqDU+xGaNhmpRwauiPwJ7H8kn7EzNUx41ZekCqhCeQBxnTuAKXhWp1iNS5a
+3QCVOdxEqhi6ox2nyqA1akwKAjXO0tKkxQszA2o5t61pT4+I449XbzcL50jC1TADRXtumrzGL71HczGbmjM/y42WOXQVFEN/EnhpaPOnvDUA8OIweaM4kDM5EhOhfQyaoYjFGfDzEd7Gi77T8fq5l42CX/13FYMCP7B33AyGPAVjRwteGKHWZsNxh7lihu2J7oSb3yQWHA5pz2khqCk+1+AmXHELf174ttLF4OTF+h7ZdLIjQnV1AB9OINYLECPM66uMIfzLxkK0hJekaqAZ8K3kTg4H0zOBKnezagt3AtS7AjfzpapKz3NWE8qrUs9NB5jL/1pKceZ7/IIWjGsmZF7WoZL9srwF8dMtJPot4g8GYCbW6FN8uU="
